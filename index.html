@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hogan Jerry Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-EmRcsPP774S9MOi4ywB+JXUWjYnBdyInMzG2XsC5siZEUpexqxOMJW358dCYEjPu" crossorigin="anonymous">
+
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <style>
+     
+    </style>
+</head>
+<body>
+    
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-12" id="mainBg">
+                <div id="imgBg">
+                        <div id="profilePics"></div>
+                </div>
+
+                <div id="socials">
+                  <a href="https://github.com/hdJerry"> 
+                    <span class="fa fa-github"></span>
+                </a> 
+                   <a href="https://www.linkedin.com/in/hogan-damilola-30605b129/">
+                    <span class="fa fa-linkedin-square"></span>
+                </a> 
+                   <a href="mailto:damilolajerryhd@gmail.com">
+                        <span class="fa fa-google-plus-square"></span>
+                   </a> 
+                </div>
+             <div id="butBg">
+                    <button class="btn btn-primary form-control" type="button" uk-toggle="target: #offcanvas-flip" id="hireBut">Available for Hire</button>
+
+             </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="uk-offcanvas-content">
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+        
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+        
+                    <h3>CONTACT US</h3>
+                     <form action="mailto:damilolajerryhd@gmail.com" method="post" enctype="text/plain">
+
+                        <div class="uk-margin">
+                            <label for="fullname">Full Name</label>
+                            <input class="uk-input" type="text" name="fullname" id="fullname" placeholder="Full name" required>
+                          </div>    
+
+                        <div class="uk-margin">
+                            <label for="company">Company Name</label>
+                            <input class="uk-input" type="text" name="company" id="company" placeholder="Company Name" required>
+                           </div>   
+                            
+                            <div class="uk-margin">
+                                <label for="email">Email</label>
+                                <input class="uk-input" type="text" name="email" id="email" placeholder="Company Name" required>
+                               </div>   
+
+                            <div class="uk-margin">
+                                 <label for="message">Message</label>
+                                 <textarea class="uk-textarea" rows="5" placeholder="message" name="mesage" id="message" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Email us</button>
+                     </form>
+        
+                </div>
+            </div>
+        
+        </div>
+</body>
+</html>

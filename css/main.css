@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+
+}
+html{
+  overflow: hidden;
+
+}
+#mainBg{
+  overflow: hidden;
+  background-image : url('../images/pb.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#profilePics{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+  margin: auto;
+     box-shadow: 0 0 0 10px #1d9ce5,
+        0 0 0 20px #2FA4E7,
+        0 0 0 30px #54b4eb;
+  background-image : url('../images/pp.jpeg');
+  background-repeat:no-repeat;
+  background-size: contain;
+  animation-name: shadow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shadow{
+   0% {box-shadow: 0px 0px 0px black;}
+   25% {box-shadow: 0 0 0 10px #1d9ce5;}
+   50% {box-shadow: 0 0 0 10px #1d9ce5,
+                    0 0 0 20px #2FA4E7}
+   75% {box-shadow: 0 0 0 10px #1d9ce5,
+                    0 0 0 20px #2FA4E7,
+                    0 0 0 30px #54b4eb;}
+   100% {box-shadow: 0px 0px 0px black;}
+}
+#imgBg{
+  margin:100px auto;
+  width: 50%;
+  padding: 10px;
+}
+
+#butBg{
+    margin:20px auto;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+#socials{
+  margin:auto;
+width: 50%;
+display: flex;
+padding: 15px;
+justify-content: center;
+/* background-color: red; */
+margin-top:-50px;
+font-size: 2.4em!important;
+
+}
+#socials .fa{
+  margin: 10px;
+}
