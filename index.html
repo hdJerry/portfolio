@@ -85,12 +85,18 @@
                                  <textarea class="uk-textarea" rows="5" placeholder="message" name="mesage" id="message" required></textarea>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Email us</button>
+                                <button type="submit" class="btn btn-primary" id="emailus">Email us</button>
                      </form>
         
                 </div>
             </div>
         
         </div>
+
+        <script>
+            $('#emailus').on('click', ()=>{
+             $('.uk-input, .uk-textarea').val(' ');
+            });
+        </script>
 </body>
 </html>
