@@ -1,4 +1,4 @@
-let CACHE_NAME = 'static-cache';
+let CACHE_NAME = 'static-caches';
 
 self.addEventListener('install', (event) => {
   
@@ -12,8 +12,11 @@ self.addEventListener('install', (event) => {
           'js/uikit.min.js',
           'js/uikit-icons.min.js',
           'images/pp.jpeg',
-          'images/pb.png'
-          
+          'images/pb.png',
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+          'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css',
+          'https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/cerulean/bootstrap.min.css'
         ]);
     })
   );
@@ -37,7 +40,7 @@ self.addEventListener('activate', (event) =>{
 });
 
 self.addEventListener('fetch', (event) => {
-  console.log(event.request);
+  // console.log(event.request);
   let requestUrl = new URL(event.request.url);
   event.respondWith(
     caches.match(event.request)
