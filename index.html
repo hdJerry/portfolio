@@ -31,8 +31,24 @@
 
         <div class="row">
             <div class="col-md-12" id="mainBg">
+                <div id="arrow">
+                    <span style="font-size: 0.5em; color:#fff;">
+                        click image
+                    </span><br>
+                    <div class="arrow bounce" id="direct">
+                    <a href="#" >
+                            <span class="fa fa-angle-double-down"></span>
+                        </a> 
+                    </div>
+                  
+                </div>
                 <div id="imgBg">
-                        <div id="profilePics"></div>
+                        <a class="" href="#modal-sections" uk-toggle>
+                           <div id="profilePics" title="About Me"></div>
+                        </a>
+                </div>
+                <div id="about">
+                   <p id="name">Hogan Damilola Jerry</p>
                 </div>
 
                 <div id="socials">
@@ -92,6 +108,28 @@
             </div>
         
         </div>
+
+
+        <!------About Me Modal-->
+  
+
+            <div id="modal-sections" uk-modal>
+                <div class="uk-modal-dialog">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">About Me 
+                            <i class="fa fa-smile-o" aria-hidden="true"></i>
+                        </h2>
+                    </div>
+                    <div class="uk-modal-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        <!------About me modal Ends-->
 
         <script>
             $('#emailus').on('click', ()=>{
