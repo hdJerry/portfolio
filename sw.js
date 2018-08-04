@@ -1,6 +1,7 @@
-let CACHE_NAME = 'static-caches';
+let CACHE_NAME = 'static-cache';
 
 self.addEventListener('install', (event) => {
+  
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) =>{
       return cache.addAll([
@@ -12,6 +13,7 @@ self.addEventListener('install', (event) => {
           'js/uikit-icons.min.js',
           'images/pp.jpeg',
           'images/pb.png'
+          
         ]);
     })
   );
@@ -35,7 +37,7 @@ self.addEventListener('activate', (event) =>{
 });
 
 self.addEventListener('fetch', (event) => {
-  // console.log(event.request);
+  console.log(event.request);
   let requestUrl = new URL(event.request.url);
   event.respondWith(
     caches.match(event.request)

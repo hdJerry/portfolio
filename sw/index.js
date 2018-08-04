@@ -5,7 +5,9 @@
 
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('cache.js')
+  console.log('service');
+  
+  navigator.serviceWorker.register('sw.js')
   .then(function(reg) {
     if (!navigator.serviceWorker.controller) {
       return;
