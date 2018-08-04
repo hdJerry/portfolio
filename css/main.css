@@ -49,9 +49,11 @@ html{
 
 #butBg{
     margin:20px auto;
-  width: 15%;
   display: flex;
   justify-content: center;
+}
+#hireBut{
+  padding: 5px 30px 5px 30px;
 }
 #socials{
   margin:auto;
