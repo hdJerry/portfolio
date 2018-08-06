@@ -48,16 +48,19 @@ html{
 }
 
 #butBg{
-    margin:20px auto;
+    margin:5px auto;
   display: flex;
   justify-content: center;
+}
+#butBg button{
+  margin-top: -10px;
 }
 #hireBut{
   padding: 5px 30px 5px 30px;
 }
 #socials{
-  margin:-10px auto;
-width: 50%;
+  /* margin:-10px auto;
+width: 50%; */
 display: flex;
 padding: 15px;
 justify-content: center;
@@ -85,8 +88,8 @@ color: #3d88f0!important;
 font-size: 2.4em;
 }
 #arrow{
-  /* margin:auto;
-  width: 50%; */
+  /* margin:auto; */
+  /* width: 50%; */
   height: 10px;
   text-align: center;
 justify-content: center;
