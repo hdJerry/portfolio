@@ -43,8 +43,8 @@ html{
 }
 #imgBg{
   margin:100px auto;
-  width: 50%;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 #butBg{
@@ -56,7 +56,7 @@ html{
   padding: 5px 30px 5px 30px;
 }
 #socials{
-  margin:auto;
+  margin:-10px auto;
 width: 50%;
 display: flex;
 padding: 15px;
@@ -85,8 +85,8 @@ color: #3d88f0!important;
 font-size: 2.4em;
 }
 #arrow{
-  margin:auto;
-  width: 50%;
+  /* margin:auto;
+  width: 50%; */
   height: 10px;
   text-align: center;
 justify-content: center;
@@ -145,20 +145,34 @@ font-family: cursive;
   }
 }
 .arrow{
-  position: fixed;
+  /* position: fixed;
   left: 50%;
-  margin-left: -20px;
+  margin-left: -20px; */
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
+#about i{
+  color:#fff;
+  font-size: 1.0em;
+  text-shadow: 0 0 30px #3d88f0;
+}
 
-/* @keyframes arrow{
-  0% {margin-bottom: -5px}
-  25% {margin-bottom : -10px}
-  50% {margin-bottom: -15px}
-  75% {margin-bottom: -10px}
-  100% {margin-bottom: -5px}
-} */
+@media all and (min-width:70px) and (max-width:712px){
+  #about #name{
+    font-family: fantasy;
+    color: #3d88f0!important;
+    font-size: 1.6em;
+    }
+    #profilePics{
+      width: 150px;
+      height: 150px;
+    }
+    #socials{
+    font-size: 1.4em!important;
+    margin-top: -20px;
+
+    }
+ }
