@@ -11,6 +11,7 @@ self.addEventListener('install', (event) => {
           'css/uikit.min.css',
           'js/uikit.min.js',
           'js/uikit-icons.min.js',
+          'js/main.js',
           'images/pp.jpeg',
           'images/pb.png',
           'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
